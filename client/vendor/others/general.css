@@ -1,0 +1,250 @@
+/*==================== GLOBAL STYLES ====================*/
+.wrapper-like-map { margin:0 auto; width:950px;}
+.sep.beforeLikebox { width:100%; height:1px; background:#fbfbfd; border-top:solid 1px #dddddf; margin:35px 0px 10px 0px;}
+
+/* Likw Map */
+.likeMapBox { clear:both; width:100%; border:solid 1px #dfdfdf; text-align:left;}
+.likeMapBox .title { width:100%; height:58px; line-height:58px;   background:url(../../images/general/likemap-title-pattern.png);}
+.likeMapBox .title h4 { padding:0px 23px; font-size:20px; font-weight:bold; color:#31333c;}
+.likeMapBox .content { padding:10px 20px; background:#ffffff; overflow:hidden;}
+.likeMapBox .content .left { display:inline; float:left; width:450px;}
+.likeMapBox .content .left .text { font-size:14px; font-weight:normal; color:#31333c; line-height:150%;}
+.likeMapBox .content .right {display:inline; float:right;}
+.likeMapBox .content .right .socialconteiner { display:inline; float:right;}
+.ie7 .likeMapBox .content .right .socialconteiner { float:none;}
+.likeMapBox .content .right .socialconteiner .sharrre { float:right; width:53px; height:65px;  margin-left:15px;}
+.likeMapBox .content .right .socialconteiner .sharrre .box { width:100%;}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.count { position:relative; display:inline-block; width:100%; height:29px; text-align:center; border:solid 1px #bcd0d5; -webkit-border-radius: 4px;
+border-radius: 4px; -webkit-box-shadow:  0px 0px 2px 0px #f0f2f3;  box-shadow:  0px 0px 2px 0px #f0f2f3;
+background: rgb(251,251,251); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(251,251,251,1) 0%, rgba(246,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,251,251,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(251,251,251,1) 0%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(251,251,251,1) 0%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(251,251,251,1) 0%,rgba(246,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(251,251,251,1) 0%,rgba(246,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.count span.text {height:29px; line-height:29px; display:inline-block; font-size:13px;  font-weight:bold; color:#525b67; }
+.likeMapBox .content .right .socialconteiner .sharrre .box a.count span.counterArrow { position:absolute; top:28px; left:50%; margin-left:-3px; width:7px; height:8px; background:url(../../images/general//counter-arrow.png) no-repeat;}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.count:hover { background:#fff;}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share { position:relative; display:inline-block; margin-top:10px; width:100%; height:22px; text-align:center; -webkit-border-radius: 4px;
+border-radius: 4px; -webkit-box-shadow: 0px 0px 2px 0px  #a6a6a6; box-shadow:  0px 0px 2px 0px #a6a6a6;}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share:before { display:block; content:""; position: absolute;  z-index: 1; width: 100%;height: 50%;  }
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share:after {display:block; content:""; position: absolute; z-index: 1; top:50%; width: 100%; height: 50%; }
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share span.conteiner { position:relative; z-index:2; display:block; width:100%; height:22px;  background-image:url(../../images/general//button-pattern.png);}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share span.conteiner span.icon { position:relative; z-index:3;  margin:5px 3px 0px 0px;  display:inline-block; width:12px; height:12px; background-image:url(../../images/general//social-icon-button.png); background-repeat:no-repeat;}
+.likeMapBox .content .right .socialconteiner .sharrre .box a.share span.conteiner span.text { position:relative; z-index:3; display:inline-block; vertical-align:top;  font-size:9px; line-height:22px; font-weight:bold; color:#fff; }
+
+/* linkedin normal */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin a.count{ }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.count span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share {border:solid 1px #077aab;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:before {background: rgb(38,172,232); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(38,172,232,1) 0%, rgba(30,162,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38,172,232,1)), color-stop(100%,rgba(30,162,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(38,172,232,1) 0%,rgba(30,162,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(38,172,232,1) 0%,rgba(30,162,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(38,172,232,1) 0%,rgba(30,162,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(38,172,232,1) 0%,rgba(30,162,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ace8', endColorstr='#1ea2e5',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:after {background: rgb(0,149,225); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,149,225,1) 0%, rgba(0,138,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,149,225,1)), color-stop(100%,rgba(0,138,222,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,149,225,1) 0%,rgba(0,138,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,149,225,1) 0%,rgba(0,138,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,149,225,1) 0%,rgba(0,138,222,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,149,225,1) 0%,rgba(0,138,222,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0095e1', endColorstr='#008ade',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share span.conteiner {}
+.ie7 .likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share span.conteiner { background-color:#1a91cd;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share span.conteiner span.icon { background-position:0px 0px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share span.conteiner span.text {text-shadow: 1px 1px 0px #a2a2a2; }
+
+/* linkedin hover */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.count:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.count:hover span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover:before { background:#008ad9;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover:after { background:#007ed5;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover span.conteiner {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share:hover span.conteiner span.text {}
+
+/* linkedin active */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.count.active {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.count.active span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active {-webkit-box-shadow: inset  0px 0px 0px 0px; box-shadow: inset 0px 0px 0px 0px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active:before {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active:after { }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active span.conteiner {-webkit-box-shadow: inset  0px 0px 4px 0px  #4D708A; box-shadow: inset 0px 0px 4px 0px #4D708A;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemLinkedin .box a.share.active span.conteiner span.text {}
+
+
+/* google normal */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus a.count{}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.count span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share { border:solid 1px #3c3c3c;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:before {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:after {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner {background: rgb(108,108,108); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(108,108,108,1) 0%, rgba(67,67,67,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(108,108,108,1)), color-stop(100%,rgba(67,67,67,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(67,67,67,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(67,67,67,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(67,67,67,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(108,108,108,1) 0%,rgba(67,67,67,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c6c6c', endColorstr='#434343',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon {  width:100%; height:3px;  vertical-align:top; background-image:none; margin:0; top:-1px; -webkit-border-radius: 4px 4px 0px 0px;
+border-radius: 4px 4px 0px 0px;}
+.ie7 .likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner { background-color:#585858;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon span { display:inline-block; width:25%; height:3px;  vertical-align:top;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon span.red { background-color:#e5414e; }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon span.blue { background-color:#2b99e5; }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon span.green { background-color:#4acb36; }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.icon span.yellow {background-color:#ffd03c; }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share span.conteiner span.text { position:relative; top:-12px; line-height:18px;}
+
+/* google hover */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.count:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.count:hover span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover:before {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover:after {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover span.conteiner { background:#434343;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share:hover span.conteiner span.text {}
+
+/* google active */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.count.active {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.count.active span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active {-webkit-box-shadow: inset  0px 0px 0px 0px; box-shadow: inset 0px 0px 0px 0px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active:before {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active:after {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active span.conteiner {-webkit-box-shadow: inset  0px 0px 4px 0px  #383838; box-shadow: inset 0px 0px 4px 0px #383838;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemGoogleplus .box a.share.active span.conteiner span.text {}
+
+
+
+/* facebook normal */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook a.count{}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.count span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share {border:solid 1px #375491;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:before {background: rgb(84,129,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(84,129,200,1) 0%, rgba(73,113,183,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,129,200,1)), color-stop(100%,rgba(73,113,183,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(84,129,200,1) 0%,rgba(73,113,183,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(84,129,200,1) 0%,rgba(73,113,183,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(84,129,200,1) 0%,rgba(73,113,183,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(84,129,200,1) 0%,rgba(73,113,183,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5481c8', endColorstr='#4971b7',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:after {background: rgb(64,105,178); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(64,105,178,1) 0%, rgba(50,81,152,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,105,178,1)), color-stop(100%,rgba(50,81,152,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(64,105,178,1) 0%,rgba(50,81,152,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(64,105,178,1) 0%,rgba(50,81,152,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(64,105,178,1) 0%,rgba(50,81,152,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(64,105,178,1) 0%,rgba(50,81,152,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4069b2', endColorstr='#325198',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share span.conteiner {}
+.ie7 .likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share span.conteiner { background-color:#3c61aa;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share span.conteiner span.icon {background-position:0px -15px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share span.conteiner span.text {text-shadow: 1px 1px 0px #2a4787;}
+
+/* facebook hover */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.count:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.count:hover span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover:before { background:#325198;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover:after { background:#325198;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover span.conteiner {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share:hover span.conteiner span.text {}
+
+/* facebook active */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.count.active {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.count.active span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active {-webkit-box-shadow: inset  0px 0px 0px 0px; box-shadow: inset 0px 0px 0px 0px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active:before {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active:after {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active span.conteiner {-webkit-box-shadow: inset  0px 0px 4px 0px  #26437f; box-shadow: inset 0px 0px 4px 0px #26437f;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemFacebook .box a.share.active span.conteiner span.text {}
+
+
+
+/* twitter normal */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter a.count{}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.count span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share {border:solid 1px #007fca;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:before {background: rgb(40,195,235); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(40,195,235,1) 0%, rgba(30,174,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(40,195,235,1)), color-stop(100%,rgba(30,174,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(40,195,235,1) 0%,rgba(30,174,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(40,195,235,1) 0%,rgba(30,174,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(40,195,235,1) 0%,rgba(30,174,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(40,195,235,1) 0%,rgba(30,174,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28c3eb', endColorstr='#1eaee5',GradientType=0 ); /* IE6-9 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:after {background: rgb(0,160,224); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDgwZDYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(0,160,224,1) 0%, rgba(0,128,214,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,160,224,1)), color-stop(100%,rgba(0,128,214,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,160,224,1) 0%,rgba(0,128,214,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,160,224,1) 0%,rgba(0,128,214,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,160,224,1) 0%,rgba(0,128,214,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,160,224,1) 0%,rgba(0,128,214,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0e0', endColorstr='#0080d6',GradientType=0 ); /* IE6-8 */
+}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share span.conteiner {}
+.ie7 .likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share span.conteiner { background-color:#0099de;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share span.conteiner span.icon {background-position:0px -30px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share span.conteiner span.text {text-shadow: 1px 1px 0px #007bc2;}
+
+/* twitter hover */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.count:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.count:hover span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover:before {background:#0080d6;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover:after {background:#0080d6;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover span.conteiner {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share:hover span.conteiner span.text {}
+
+/* twitter active */
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.count.active {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.count.active span.text {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active {-webkit-box-shadow: inset  0px 0px 0px 0px; box-shadow: inset 0px 0px 0px 0px;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active:before { }
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active:after {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active span.conteiner {-webkit-box-shadow: inset  0px 0px 4px 0px  #156494; box-shadow: inset 0px 0px 4px 0px #156494;}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active span.conteiner span.icon {}
+.likeMapBox .content .right .socialconteiner .sharrre.mapItemTwitter .box a.share.active span.conteiner span.text {}
+
+
+.shareIntroText { display:inline; float:right; padding-top:45px; font-size:14px; font-weight:normal; color:#bababa;}
+.shareIntroText span { letter-spacing:-1px; font-weight:bold; text-transform:uppercase;}
+
+@media (max-width:600px) 
+{
+	.likeMapBox { display:none;} 
+}

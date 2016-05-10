@@ -1,0 +1,32 @@
+window.Adform.Tracking.TrackingPointId = 14710017;
+window.Adform.Tracking.TrackingPointName = "MasterTag";
+Adform.Tracking.CreateIframeElement("http://track.adform.net/serving/container/?pm=527423&lid=14710017&ctype=0&media=0&PageName=MasterTag&rnd=1622214084&cpref=&loc=http%3a%2f%2fwww.etoro.com%2fen%2fcustomer-service%2fcontact-us%2f");try{
+adfname = location.pathname;
+adfname = adfname.replace('/ar/', '/');
+adfname = adfname.replace('/fr/', '/');
+adfname = adfname.replace('/zh/', '/');
+adfname = adfname.replace('/ru/', '/');
+adfname = adfname.replace('/de/', '/');
+adfname = adfname.replace('/es/', '/');
+adfname = adfname.replace('/en/', '/');
+adfname = adfname.replace('/it/', '/');
+adfname = adfname.replace('/ae/', '/');
+adfname = adfname.replace('/a/', '/');
+adfname = adfname.replace('/en-us/', '/');
+
+
+if (adfname == '/' ){
+var adfScript = document.createElement('script');
+adfScript.src='https://track.adform.net/serving/scripts/trackpoint/';
+adfScript.onload = function(){
+adf.Params.PageName = encodeURIComponent('Homepage');
+    adf.Params.Divider = encodeURIComponent('|');
+    adf.track(527423);
+};
+document.head.appendChild(adfScript);
+}
+var adfURL = location.href;
+if (adfURL == "http://content.etoro.com/lp/uk/index.php") {
+	adf.track(527423, 'Landing page UK');
+}
+}catch(e){}

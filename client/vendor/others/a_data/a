@@ -1,0 +1,3 @@
+window.Adform.Tracking.TrackingPointId = 14786053;
+window.Adform.Tracking.TrackingPointName = "Website";
+Adform.Tracking.CreateIframeElement("http://track.adform.net/serving/container/?pm=527423&lid=14786053&ctype=0&media=0&PageName=Website&rnd=1229774786&cpref=http%3a%2f%2fwww.etoro.com%2fen%2fcustomer-service%2fcontact-us%2f&loc=http%3a%2f%2ftrack.adform.net%2fserving%2fcontainer%2f%3fpm%3d527423%26lid%3d14710017%26ctype%3d0%26media%3d0%26PageName%3dMasterTag%26rnd%3d1622214084%26cpref%3d%26loc%3dhttp%253a%252f%252fwww.etoro.com%252fen%252fcustomer-service%252fcontact-us%252f");

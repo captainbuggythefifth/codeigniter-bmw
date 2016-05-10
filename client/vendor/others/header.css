@@ -1,0 +1,3441 @@
+/*==================== GLOBAL STYLES ====================*/
+body {
+    background-image: url(../../images/body-bg.png);
+}
+
+.topHeader {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.topHeader img, .topHeader a, .topHeader iframe, .topHeader IFRAME, .topHeader input, .topHeader form, .topHeader ul, .topHeader li, .topHeader ol, .topHeaderp p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    outline: 0;
+}
+
+.topHeader span {
+    padding: 0;
+    margin: 0;
+}
+
+.topHeader img a {
+    border: none;
+}
+
+.topHeader a {
+    color: #408fd3;
+    outline: none;
+    font-weight: normal;
+}
+
+.topHeader .clearFix {
+    width: 100%;
+    clear: both;
+    height: 0px;
+}
+
+.wrapper-inner-page {
+    width: 950px;
+    margin: 0 auto;
+    content: "";
+    text-align: left;
+}
+
+.clear {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.clear.padded {
+    height: 14px;
+}
+
+nav {
+    display: block;
+}
+
+br {
+}
+
+/* = Nvigation Menu
+  =================================================================*/
+#main-menu {
+    position: relative;
+    text-align: left;
+    background-image: url('nav-bg.jpg');
+    background-repeat: repeat-x;
+    height: 47px;
+    width: 100%;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+#main-menu a {
+    text-decoration: none;
+}
+
+#main-menu nav {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#main-menu.done nav {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#main-menu nav .leftMenu {
+    display: inline;
+    float: left;
+}
+
+#main-menu nav .rightMenu {
+    display: inline;
+    float: right;
+}
+
+#main-menu ul {
+    position: relative;
+    font-size: 0px;
+    text-align: left;
+    background-image: url('../../images/header-2012/menu-item-break.jpg');
+    background-repeat: no-repeat;
+    background-position: 740px 0;
+}
+
+#main-menu .menu-item {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 47px;
+    vertical-align: top;
+}
+
+#main-menu .menu-item.open {
+    background: #EDEDED;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EDEDED), color-stop(98%, #EDEDED), color-stop(100%, gainsboro));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dcdcdc', GradientType=0);
+}
+
+#main-menu .menu-item.open .top-link {
+    color: #2C2C2C;
+}
+
+#main-menu li.more ul,
+#main-menu li.languages ul,
+#main-menu li.sign-in div.login-box {
+    position: absolute;
+    display: none;
+    background-color: #fafafa;
+    box-shadow: -1px 0 4px rgba(0, 0, 0, .2);
+    z-index: 9999;
+}
+
+#main-menu li.more ul {
+    width: 182px;
+}
+
+#main-menu li.languages ul {
+    width: 292px;
+}
+
+#main-menu li.sign-in div.login-box {
+    display: block;
+    width: 305px;
+    border-left: 1px solid darkGray;
+    background: #fff;
+    border-bottom: 1px solid darkGray;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    box-shadow: -1px 0 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: -1px 0 4px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: -1px 0 4px rgba(0, 0, 0, .2);
+}
+
+#main-menu.done li.sign-in div.login-box {
+    display: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#main-menu li.sign-in div.login-box form {
+    padding: 24px 25px 21px
+}
+
+#main-menu li.sign-in div.login-box form input[type="text"],
+#main-menu li.sign-in div.login-box form input[type="password"] {
+    width: 220px;
+    padding: 10px 15px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+    font-size: 14px;
+    background-color: #F7F7F7;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#main-menu li.sign-in div.login-box form .row {
+    position: relative;
+    width: 252px;
+    height: 39px;
+    margin-bottom: 11px;
+}
+
+#main-menu li.sign-in div.login-box form .row.password {
+    margin-bottom: 15px;
+}
+
+#main-menu li.sign-in div.login-box form .row label {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 14px;
+    color: #777777;
+}
+
+#main-menu li.languages ul li {
+    display: inline-block;
+    width: 130px;
+}
+
+#main-menu li.sign-in div.login-box form input[type="text"]:focus,
+#main-menu li.sign-in div.login-box form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #7498B2
+}
+
+#main-menu li.sign-in div.login-box .submitRow {
+    display: inline-block;
+    float: right;
+    height: 42px;
+    min-width: 100px;
+    text-align: center;
+    background: url(../../images/header-2012/openbook-loader.gif) no-repeat center center;
+}
+
+#main-menu li.sign-in div.login-box form button {
+    margin: 0 auto;
+    block;
+    height: 42px;
+    padding: 1px 25px 2px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0081C3;
+    border: 1px solid #D1D1D1;
+    outline: 0 none;
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: white;
+    background: -moz-linear-gradient(top, white 0, #FDFDFD 32%, #EAEAEA 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(32%, #FDFDFD), color-stop(100%, #EAEAEA));
+    background: -webkit-linear-gradient(top, white 0, #FDFDFD 32%, #EAEAEA 100%);
+    background: -o-linear-gradient(top, white 0, #FDFDFD 32%, #EAEAEA 100%);
+    background: -ms-linear-gradient(top, white 0, #FDFDFD 32%, #EAEAEA 100%);
+    background: linear-gradient(top, white 0, #FDFDFD 32%, #EAEAEA 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=0);
+}
+
+#main-menu li.sign-in div.login-box form button.active {
+    border: solid 1px #c7c7c7;
+    background: rgb(234, 234, 234); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhZWFlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZGZkZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(253, 253, 253, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(234, 234, 234, 1)), color-stop(100%, rgba(253, 253, 253, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(253, 253, 253, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(253, 253, 253, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(253, 253, 253, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(234, 234, 234, 1) 0%, rgba(253, 253, 253, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#fdfdfd', GradientType=0); /* IE6-8 */
+}
+
+#main-menu li.sign-in div.login-box a.forget-password {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+#main-menu li.sign-in div.login-box .errorConteiner {
+    width: auto;
+    clear: both;
+    padding: 0px 26px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    color: #c02929;
+}
+
+#main-menu li.sign-in div.login-box .errorConteiner .text {
+    display: none;
+    margin-bottom: 20px;
+    padding: 11px 10px 11px 45px;
+    line-height: 18px;
+    border: 1px solid #F69288;
+    background: #FFF0F0 url(../../images/header-2012/error-u-p.png) no-repeat 15px center;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 999999;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+}
+
+#main-menu li.sign-in div.login-box .errorConteiner .text.missingFields {
+}
+
+#main-menu li.sign-in div.login-box .errorConteiner .text.loginFailed {
+}
+
+#main-menu li.sign-in div.login-box .login-footer {
+    width: auto;
+    padding: 10px 0;
+    background-color: #eff9fd;
+    border-top: 1px solid #D9D9D9;
+    text-align: center;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .introText {
+    display: block;
+    font-size: 14px;
+    margin: 5px auto 10px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .fbButtonConteiner {
+    text-align: center;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    min-width: 238px;
+    height: 41px;
+    border: solid 1px #476CAF;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: rgb(89, 129, 198); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(89, 129, 198, 1) 0%, rgba(72, 108, 169, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(89, 129, 198, 1)), color-stop(100%, rgba(72, 108, 169, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(89, 129, 198, 1) 0%, rgba(72, 108, 169, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(89, 129, 198, 1) 0%, rgba(72, 108, 169, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(89, 129, 198, 1) 0%, rgba(72, 108, 169, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(89, 129, 198, 1) 0%, rgba(72, 108, 169, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5981c6', endColorstr='#486ca9', GradientType=0); /* IE6-9 */
+}
+
+#main-menu li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-logo {
+    position: relative;
+    bottom: -1px;
+    display: inline-block;
+    float: left;
+    width: 43px;
+    height: 41px;
+    background: url(../../images/header-2012/fb-icon.png) no-repeat 19px 15px;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-caption {
+    display: inline-block;
+    padding: 0px 18px 0px 10px;
+    line-height: 41px;
+    vertical-align: top;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #071F5E;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-logo::before, .lightBoxOpenbook .welcome .content .fbButtonConteiner a.facebook span.social-network-logo::after {
+    content: '';
+    height: 41px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    width: 1px;
+    background: #6a8ac0;
+    border-left: solid 1px #4163a3;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .footerEmailTxt {
+    margin: 14px 0 0;
+    padding-bottom: 13px;
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .footerEmailTxt span {
+    color: #0079B9;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited {
+    position: relative;
+    border-top: 1px solid #dcdcdd;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .limitedTxt {
+    font-size: 12px;
+    margin: 12px 0 3px;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .limitedTxt:hover {
+    text-decoration: underline;
+    color: #00a5ee;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .sub-m-toolTip {
+    position: absolute;
+    left: -260px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .sub-m-toolTip .sub-m-toolTipArrow {
+    float: left;
+    margin-left: -1px;
+    width: 7px;
+    height: 12px;
+    background: url(../../images/header-2012/sub-m-tool-tip-arrow.png) no-repeat;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .sub-m-toolTip .sub-m-toolTipContent {
+    float: left;
+    width: 220px;
+    padding: 14px 20px;
+    background: #ffffff;
+    font-size: 12px;
+    line-height: 160%;
+    border: solid 1px #c4c4c4;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 3px 0px #a7a7a7;
+    box-shadow: 0px 0px 3px 0px #a7a7a7;
+}
+
+#main-menu li.sign-in div.login-box .login-footer .limited .sub-m-toolTip .sub-m-toolTipContent b {
+    font-weight: bold;
+}
+
+#main-menu li.menu-item.button {
+    margin-left: 10px;
+}
+
+#main-menu li.menu-item.button a {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #2b2e3b;
+    font-weight: bold;
+    background: #009ee4;
+    font-size: 13px;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#main-menu li.menu-item.button a:hover {
+    background: #33b1e9;
+}
+
+/* foreget password */
+.screen {
+    z-index: 10000 !important;
+}
+
+.registration-service.modal {
+    z-index: 11000 !important;
+}
+
+#main-menu li.menu-item ul li {
+    padding-left: 14px;
+    line-height: 38px;
+    font-weight: normal;
+    border: 1px solid #ededed;
+    font-size: 13px;
+    color: #777777;
+}
+
+#main-menu li.menu-item.languages ul li {
+    float: right;
+}
+
+#main-menu li.menu-item ul li:hover {
+    background-color: #ebf5fa;
+    border-top: 1px solid #93c7e2;
+    border-bottom: 1px solid #93c7e2;
+}
+
+#main-menu li.menu-item ul li:hover a {
+    color: #2c2c2c;
+}
+
+#main-menu li.menu-item ul li a {
+    display: block;
+    text-decoration: none;
+    color: #777777;
+}
+
+#main-menu .menu-item a.top-link {
+    display: block;
+    line-height: 47px;
+    padding: 0px 12px;
+    text-decoration: none;
+    color: white;
+}
+
+#main-menu .menu-item a.top-link span.flag {
+    display: block;
+    top: 16px;
+}
+
+#main-menu .drop-down .menu {
+    position: absolute;
+    right: 0px;
+    top: 47px;
+    border: none;
+    height: auto;
+}
+
+#main-menu li .icon {
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#main-menu .icon.more {
+    width: 10px;
+    height: 7px;
+    background: url('../../images/header-2012/menu-item-arrow.png') no-repeat;
+}
+
+#main-menu li.open .icon.more {
+    background-position: 0 -15px;
+}
+
+#main-menu li .text {
+    display: inline-block;
+    *display: inline;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#main-menu li.open ul {
+    display: block;
+}
+
+#main-menu li.sign-in.open div.login-box {
+    display: none;
+}
+
+#main-menu li.top-menu-item:hover,
+#main-menu li.rankings:hover,
+#main-menu li.markets:hover,
+#main-menu li.webtrader:hover,
+#main-menu li.help:hover,
+#main-menu li.more:not(.open):hover,
+#main-menu li.languages:not(.open):hover,
+#main-menu li.sign-in:not(.open):hover {
+    background-image: url('../../images/header-2012/top-nav-hover.png');
+    background-repeat: repeat-x;
+}
+
+#main-menu li.etoro.logo {
+    margin-right: 0px;
+}
+
+#main-menu li.etoro.logo a {
+    display: block;
+    width: 125px;
+}
+
+#main-menu nav .leftMenu li.menu-item > a {
+    padding: 0px 12px;
+}
+
+#main-menu nav .leftMenu li.menu-item.logo > a {
+    padding: 0;
+}
+
+#main-menu li.more {
+    position: static;
+}
+
+#main-menu li.more .icon.more {
+    margin-left: 15px;
+}
+
+.safari #main-menu li.more {
+    margin-right: 40px;
+}
+
+#main-menu li.languages {
+    font-size: 13px;
+}
+
+#main-menu li.languages ul span.flag {
+    margin-right: 5px;
+}
+
+#main-menu li.languages .flag {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    width: 16px;
+    height: 11px;
+    border: 1px solid white;
+    background-image: url('https://openbook-static-files.s3-eu-west-1.amazonaws.com/../images/flags.png');
+}
+
+#main-menu li.languages .flag.en-us {
+    background-position: -1617px 0;
+}
+
+#main-menu li.languages .flag.de-de {
+    background-position: -1155px 0;
+}
+
+#main-menu li.languages .flag.es-es {
+    background-position: -1428px 0;
+}
+
+#main-menu li.languages .flag.fi-fi {
+    background-position: -1470px 0;
+}
+
+#main-menu li.languages .flag.fr-fr {
+    background-position: -1575px 0;
+}
+
+#main-menu li.languages .flag.hu-hu {
+    background-position: -84px -16px;
+}
+
+#main-menu li.languages .flag.it-it {
+    background-position: -273px -16px;
+}
+
+#main-menu li.languages .flag.nn-no {
+    background-position: -672px 0;
+}
+
+#main-menu li.languages .flag.pl-pl {
+    background-position: -1680px -16px;
+}
+
+#main-menu li.languages .flag.pt-br {
+    background-position: -1785px -16px;
+}
+
+#main-menu li.languages .flag.ru-ru {
+    background-position: -1932px -16px;
+}
+
+#main-menu li.languages .flag.sv-se {
+    background-position: -63px -32px;
+}
+
+#main-menu li.languages .flag.zh-cn {
+    background-position: -966px 0;
+}
+
+#main-menu li.languages .flag.ar-ae {
+    background-position: -1050px -16px;
+}
+
+#main-menu li.languages .flag.en-au {
+    background-position: 0px -16px;
+}
+
+#main-menu li.languages .flag.us-us {
+    background-position: -756px -32px;
+}
+
+#main-menu li.languages .flag.ja-jp {
+    background-position: -357px -16px;
+    border: 0;
+}
+
+#main-menu li.languages .text {
+    font-size: 13px !important;
+}
+
+#main-menu li.languages .icon.more {
+    margin-left: 10px;
+}
+
+#main-menu li.sign-in {
+    padding: 0;
+    background-image: url('../../images/header-2012/menu-item-break.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#main-menu li.sign-in .icon.more {
+    margin-left: 10px;
+}
+
+#main-menu nav .searchBox {
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 6px 0px 0px 5px;
+}
+
+#main-menu nav .searchBox label {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    font-size: 13px;
+    color: #999999;
+}
+
+#main-menu nav .searchBox input {
+    width: 55px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 35px 0 10px;
+    border: 2px solid #3C3E45;
+    font-size: 13px;
+    color: #505050;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#main-menu nav .searchBox .searchButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background: url(../../images/header-2012/search-button.png) 0px -33px;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#main-menu nav .searchBox.focus .searchButton {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/* open menu, by AVI */
+#main-menu li.more .sub-menu {
+    position: absolute;
+    width: 960px;
+    min-height: 360px;
+    left: 0px;
+    top: 47px;
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+#main-menu li.more .sub-menu .subColumnsContainer {
+    background: #fcfcfc;
+    width: 960px;
+    min-height: 300px;
+}
+
+#main-menu li.more.open > .sub-menu {
+    display: block !important;
+}
+
+#main-menu li.more > ul.sub-menu, .ie7 .header .leftMenu ul.menu li.mainItem > ul.sub-menu {
+    border: solid 1px #EDEDED;
+    border-top: 0;
+}
+
+#main-menu li.more .sub-menu .column {
+    display: inline-block;
+    width: 179px;
+    height: 310px;
+    padding: 30px;
+    vertical-align: top;
+    border-left: solid 1px #e7e7e7;
+    font-size: 100%;
+    *float: left;
+}
+
+#main-menu li.more .sub-menu .column.first {
+    position: relative;
+    margin-left: 0px;
+    border-left: 0;
+    padding: 30px 5px 30px 30px;
+    width: 204px;
+}
+
+#main-menu li.more .sub-menu .column ul {
+    width: auto;
+    position: static;
+    display: block;
+    font-size: 100%;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#main-menu li.more .sub-menu .column ul li {
+    display: block;
+    margin: 10px 0px;
+    border: none;
+    padding-left: 0;
+    line-height: normal;
+}
+
+#main-menu li.more .sub-menu .column ul li.categoryTitle {
+    margin: 0px 0px 13px 0px;
+    font-size: 22px;
+    color: #2c2c2c;
+    font-weight: normal;
+}
+
+#main-menu li.more .sub-menu .column ul li.categoryTitle.middle {
+    margin-top: 34px;
+}
+
+#main-menu li.more .sub-menu .column ul li a {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #0079b9;
+}
+
+#main-menu li.more .sub-menu .column ul li:hover {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+}
+
+#main-menu li.more .sub-menu .column ul li:hover a {
+    color: #00A5EE;
+}
+
+#main-menu li.more .sub-menu .column ul li.sep {
+    width: 100%;
+    height: 1px;
+    margin: 12px 0px;
+    background: #ededed;
+    *width: 160px;
+    *margin: 0px 0px 8px 0px;
+}
+
+#main-menu li.more .sub-menu .column ul li.lastItem {
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: solid 1px #e0e0e1;
+}
+
+#main-menu li.more .sub-menu .column ul li.lastItem a {
+}
+
+#main-menu li.more .sub-menu .column ul li.icon a {
+    height: 19px;
+    padding-left: 30px;
+    background-image: url(../../images/header-2012/menu-icons.png);
+    background-repeat: no-repeat;
+}
+
+#main-menu li.more .sub-menu .column ul li.openbook a {
+    background-position: 0px 0px;
+}
+
+#main-menu li.more .sub-menu .column ul li.web-trader a {
+    background-position: 0px -46px;
+}
+
+#main-menu li.more .sub-menu .column ul li.mobile a {
+    background-position: 0px -136px;
+}
+
+#main-menu li.more .sub-menu .column ul li.copy a {
+    background-position: 0px -92px;;
+}
+
+#main-menu li.more .sub-menu .column ul li.mt4 a {
+    background-position: 0px -136px;
+}
+
+#main-menu li.more .sub-menu .column ul li.openbook a:hover {
+    background-position: 0px -23px;
+}
+
+#main-menu li.more .sub-menu .column ul li.web-trader a:hover {
+    background-position: 0px -69px;
+}
+
+#main-menu li.more .sub-menu .column ul li.mobile a:hover {
+    background-position: 0px -162px;
+}
+
+#main-menu li.more .sub-menu .column ul li.copy a:hover {
+    background-position: 0px -113px;;
+}
+
+#main-menu li.more .sub-menu .column ul li.mt4 a:hover {
+    background-position: 0px -251px;
+}
+
+#main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+    display: inline-block;
+    border-radius: 3px;
+    background: #7dc314;
+    color: #fff;
+    padding: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+#main-menu li.more .sub-menu .column ul li a span.sub_menu_updated {
+    display: inline-block;
+    border-radius: 3px;
+    background: #5fabec;
+    color: #fff;
+    padding: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+#main-menu li.more .sub-menu .column.last {
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area {
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area br {
+    display: inherit;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner {
+    display: block;
+    padding: 12px;
+    border: solid 1px #dedede;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    background: rgb(255, 255, 255); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2VmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 239, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(220, 239, 255, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 239, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 239, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 239, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(220, 239, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcefff', GradientType=0); /* IE6-8 */
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .image {
+    display: block;
+    height: 117px;
+    background: url(../../images/header-2012/menu_banner_raf.png) no-repeat center center;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .text {
+    position: relative;
+    top: -3px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 145px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    line-height: 140%;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .text b {
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .text .highlight {
+    color: #1383c3;
+    display: block
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .button {
+    display: block;
+    height: 44px;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: rgb(78, 162, 210); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRlYTJkMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZjYzOTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(78, 162, 210, 1) 0%, rgba(15, 99, 147, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(78, 162, 210, 1)), color-stop(100%, rgba(15, 99, 147, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(78, 162, 210, 1) 0%, rgba(15, 99, 147, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(78, 162, 210, 1) 0%, rgba(15, 99, 147, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(78, 162, 210, 1) 0%, rgba(15, 99, 147, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(78, 162, 210, 1) 0%, rgba(15, 99, 147, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ea2d2', endColorstr='#0f6393', GradientType=0); /* IE6-8 */
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .button .b_txt {
+    display: inline-block;
+    line-height: 44px;
+    font-size: 19px;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+}
+
+#main-menu li.more .sub-menu .more-bottom {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    background: #f0f2f5;
+    border-top: solid 1px #e9e9e9;
+    border-bottom: solid 1px #D5D5D5;
+}
+
+#main-menu li.more .sub-menu .more-bottom a {
+    display: block;
+    float: right;
+    margin: 13px 36px 0px 0px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 20px;
+    text-align: center;
+    border: solid 1px #d7d7d7;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 2px 0px #d7d7d7;
+    box-shadow: 0px 0px 2px 0px #d7d7d7;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(235, 235, 235, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0); /* IE6-9 */
+}
+
+#main-menu li.more .sub-menu .more-bottom a span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #0079b9;
+}
+
+#main-menu li.more .sub-menu .more-bottom a:hover {
+    background: #F3F2F2;
+}
+
+#main-menu li.more .sub-menu .more-bottom a:hover span {
+}
+
+#main-menu li.more .sub-menu .more-bottom a.active {
+    border: solid 1px #CAC9C9;
+    -webkit-box-shadow: inset 0px 0px 3px 0px #D8D8D8;
+    box-shadow: inset 0px 0px 3px 0px #D8D8D8;
+}
+
+#main-menu li.more .sub-menu .more-bottom .subMenuImg {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 278px;
+    width: 217px;
+    height: 119px;
+    background: url(https://site.etoro.com/en/wp-content/themes/etoro/images/header-2012/sub-menu-img.png) no-repeat;
+}
+
+#main-menu li.more .sub-menu .shadow-sub-menu {
+    width: 960px;
+    height: 7px;
+    background: url(https://site.etoro.com/en/wp-content/themes/etoro/images/header-2012/shadow-sub-menu.png) no-repeat;
+}
+
+#main-menu li.more .sub-menu .shadow-sub-menu {
+    width: 960px;
+    height: 7px;
+    background: url(https://site.etoro.com/en/wp-content/themes/etoro/images/header-2012/shadow-sub-menu.png) no-repeat;
+}
+
+/* start new menu raf */
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf {
+    width: 204px;
+    height: 329px;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner {
+    min-height: 304px;
+    border: 0px;
+    background: url('https://site.etoro.com/en/wp-content/themes/etoro/images/raf-bg-black.png') no-repeat 0px 0px;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .image {
+    height: 122px;
+    margin-top: -22px;
+    background: url('https://site.etoro.com/en/wp-content/themes/etoro/images/raf-bg-clock.png') no-repeat center center;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .text {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .text .title {
+    color: #ffff00;
+    font-weight: bold;
+    display: block;
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .button {
+    display: block;
+    height: 44px;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: rgb(78, 162, 210); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRlYTJkMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZjYzOTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #7bc214 0%, #3f9602 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7bc214), color-stop(100%, #3f9602)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7bc214 0%, #3f9602 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7bc214 0%, #3f9602 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7bc214 0%, #3f9602 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #7bc214 0%, #3f9602 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ea2d2', endColorstr='#0f6393', GradientType=0); /* IE6-8 */
+}
+
+#main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .button .b_txt {
+    font-weight: bold;
+}
+
+body.es-es #main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .text {
+    font-size: 14px;
+}
+
+body.it-it #main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .text {
+    font-size: 14px;
+}
+
+body.ru-ru #main-menu li.more .sub-menu .column .menu_raf_area.new_raf .raf_banner .text {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+body.ru-ru #main-menu li.more .sub-menu .column .menu_raf_area .raf_banner .button .b_txt {
+    font-size: 15px !important;
+}
+
+/* end new menu raf */
+
+/**/
+.screen {
+    z-index: 1000 !important;
+}
+
+.registration-service.iconize.modal {
+    z-index: 1100 !important;
+}
+
+/* = TEMP!!!!!!   Footer Navigation
+  =================================================================*/
+.new-footer {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.wrapper.Wfooter {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.newFooter {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newFooter a {
+    font-weight: normal;
+}
+
+.newFooter #footer-nav {
+    padding-top: 30px;
+    padding-bottom: 130px;
+}
+
+.newFooter #footer-nav .menu {
+    vertical-align: top;
+    display: inline-block;
+    background: none;
+    background-image: none;
+    width: auto;
+    height: auto;
+    border-top: 0;
+    *display: inline;
+    *float: left;
+}
+
+.newFooter #footer-nav .menu.menu-1,
+.newFooter #footer-nav .menu.menu-2,
+.newFooter #footer-nav .menu.menu-3 {
+    padding-right: 90px;
+}
+
+.newFooter #footer-nav .menu ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0;
+    line-height: 23px;
+}
+
+.newFooter #footer-nav h3.menu-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.newFooter #footer-nav .menu li a, #footer-nav .menu li div {
+    font-size: 14px;
+    color: #626262;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.newFooter #footer-nav .menu li a:hover, #footer-nav .menu li div:hover {
+    text-decoration: underline;
+}
+
+.newFooter #footer-nav .menu.social li {
+    height: 23px;
+    padding-left: 35px;
+    margin-bottom: 6px;
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/social-icons.jpg');
+    background-repeat: no-repeat;
+}
+
+.newFooter #footer-nav .menu.social li.twitter {
+    background-position: 0px -23px;
+}
+
+.newFooter #footer-nav .menu.social li.linkedin {
+    background-position: 0px -46px;
+}
+
+.newFooter #footer-nav .menu.social li.google {
+    background-position: 0px -69px;
+}
+
+.newFooter #footer-nav .menu.social li.youtube {
+    background-position: 0px -92px;
+}
+
+.newFooter div.line {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/line.jpg');
+    background-repeat: repeat-x;
+    height: 2px;
+    margin-top: 20px;
+}
+
+div.line {
+    height: 1px;
+    background: #fff;
+    border-top: solid 1px #dddddf
+}
+
+/* = Trusted
+  =================================================================*/
+.newFooter .trusted {
+    width: 960px;
+    height: 31px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/trust.jpg') no-repeat center center;
+}
+
+.newFooter br {
+    display: block;
+}
+
+.newFooter b {
+    font-weight: bold;
+}
+
+.newFooter #footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.newFooter #footer a:hover {
+    color: white;
+}
+
+.newFooter #footer-top-border {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/footer-top-border.jpg');
+    background-repeat: repeat-x;
+    height: 7px;
+}
+
+.newFooter #footer {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/footer-bg.jpg');
+    background-repeat: repeat-x;
+    padding: 60px 0px;
+    font-family: arial;
+    background-color: #3C4049;
+}
+
+.newFooter #footer .wrapper {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    width: 960px;
+    text-align: left;
+}
+
+.newFooter #footer #content {
+    padding-bottom: 20px;
+}
+
+.newFooter #footer #content .sub-title {
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 14px;
+}
+
+.newFooter #footer #content p.trading-name-info {
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.newFooter #footer #legal-notice {
+    font-size: 14px;
+    line-height: 18px;
+    color: #c7cad0;
+}
+
+.newFooter #footer #legal-notice p {
+    padding: 38px 12px;
+}
+
+.newFooter #footer #legal-notice p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.newFooter #usa-customers {
+    height: 75px;
+    color: #eff1f4;
+    font-size: 14px;
+    padding-bottom: 10px;
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/etoro-usa-bg.png');
+    background-repeat: no-repeat;
+}
+
+.newFooter #usa-customers p {
+    padding: 30px 0px 0px 10px;
+}
+
+.newFooter #disclosure-links {
+    color: #c7cad0;
+    font-size: 11px;
+}
+
+.newFooter #disclosure-links a {
+    color: #eff1f4;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.newFooter #disclosure-links a.general-risk-disclosure {
+    margin-left: 10px;
+}
+
+.newFooter #disclosure-links span.seprator {
+    padding: 0px 6px;
+}
+
+.newFooter #footer .wrapper {
+    margin: 0 auto;
+    width: 960px;
+    text-align: left;
+}
+
+.newFooter div.footer-line {
+    height: 2px;
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/footer-line.jpg');
+    background-repeat: repeat-x;
+}
+
+.newFooter #footer .wrapper.top {
+    padding: 13px 0px;
+    overflow: hidden;
+}
+
+.newFooter #footer .wrapper.top a {
+    font-weight: normal;
+}
+
+#footer-top-border {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/footer-2012/footer-top-border.jpg');
+    background-repeat: repeat-x;
+    height: 7px;
+}
+
+@media (min-width: 700px) {
+    /* ar-ae */
+    #main-menu.ar-ae {
+        direction: rtl;
+        text-align: right;
+    }
+
+    #main-menu.ar-ae nav .leftMenu {
+        float: right;
+    }
+
+    #main-menu.ar-ae nav .rightMenu {
+        float: left;
+    }
+
+    #main-menu.ar-ae ul {
+        text-align: right;
+    }
+
+    #main-menu.ar-ae .menu-item {
+        float: right;
+    }
+
+    #main-menu.ar-ae li .text {
+        font-size: 14px;
+    }
+
+    #main-menu.ar-ae nav .searchBox {
+        float: right;
+        margin: 6px 5px 0 0px;
+    }
+
+    #main-menu.ar-ae nav .searchBox label {
+        right: 12px;
+        left: auto;
+    }
+
+    #main-menu.ar-ae nav .searchBox input {
+        padding: 0px 10px 0px 35px;
+    }
+
+    #main-menu.ar-ae li.more .icon.more {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    #main-menu.ar-ae nav .searchBox .searchButton {
+        left: 15px;
+        right: auto;
+    }
+
+    #main-menu.ar-ae li.languages.drop-down > a > .flag {
+        margin-left: 6px;
+        margin-right: 0;
+    }
+
+    #main-menu.ar-ae li.languages .icon.more {
+        margin-right: 18px;
+        margin-left: 0;
+    }
+
+    #main-menu.ar-ae li.languages ul {
+        direction: ltr;
+        text-align: left;
+    }
+
+    #main-menu.ar-ae .drop-down .menu {
+        left: 0;
+        right: auto;
+    }
+
+    #main-menu.ar-ae li.sign-in .icon.more {
+        margin-right: 18px;
+        margin-left: 0px;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box .submitRow {
+        float: left;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-logo {
+        float: right;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-logo:before,
+    #main-menu.ar-ae li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-logo:after {
+        border-left: 0;
+        border-right: 1px solid #4163A3;
+        left: 0;
+        right: auto;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box .login-footer .fbButtonConteiner a.facebook span.social-network-caption {
+        padding: 0 10px 0 18px;
+    }
+
+    #main-menu.ar-ae li.menu-item.button {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu {
+        right: 0px;
+        left: auto;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column.first {
+        border-left: 1px solid #E7E7E7;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column.last {
+        border-left: 0;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.icon a {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.openbook a {
+        background-position: right 0px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.web-trader a {
+        background-position: right -46px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.copy a {
+        background-position: right -92px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.mobile a {
+        background-position: right -136px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .more-bottom a {
+        float: left;
+        margin: 13px 0px 0px 36px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.openbook a:hover {
+        background-position: right -23px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.web-trader a:hover {
+        background-position: right -69px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.mobile a:hover {
+        background-position: right -162px;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.copy a:hover {
+        background-position: right -113px;;
+    }
+
+    #main-menu.ar-ae li.more .sub-menu .column ul li.mt4 a:hover {
+        background-position: right -251px;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box form .row label {
+        right: 16px;
+        left: auto;
+    }
+
+    #main-menu.ar-ae li.sign-in div.login-box .errorConteiner .text {
+        padding: 11px 45px 11px 10px;
+        background-position: 96% 12px;
+        text-align: right;
+    }
+
+    .newFooter.ar-ae {
+        direction: rtl;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.menu-1, .newFooter.ar-ae #footer-nav .menu.menu-2, .newFooter.ar-ae #footer-nav .menu.menu-3 {
+        padding-left: 180px;
+        padding-right: 0;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.social li {
+        padding-right: 35px;
+        padding-left: 0;
+        background-position: right top;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.social li.twitter {
+        background-position: right -23px;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.social li.linkedin {
+        background-position: right -46px;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.social li.google {
+        background-position: right -69px;
+    }
+
+    .newFooter.ar-ae #footer-nav .menu.social li.youtube {
+        background-position: right -92px;
+    }
+
+    .newFooter.ar-ae #footer .wrapper {
+        text-align: right;
+    }
+
+    .newFooter.ar-ae #usa-customers p {
+        padding: 30px 10px 0 0;
+        text-align: left;
+    }
+
+    .newFooter.ar-ae #disclosure-links a.general-risk-disclosure {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .newFooter.ar-ae #disclosure-links a {
+        float: right;
+    }
+
+    .newFooter.ar-ae #disclosure-links span.seprator {
+        float: right;
+    }
+
+    .newFooter.ar-ae .float-right {
+        float: left;
+    }
+
+}
+
+/* = Magazines
+  =================================================================*/
+#magazines #logos {
+    height: 75px;
+}
+
+#magazines #logos li {
+    position: relative;
+    display: inline-block;
+}
+
+#magazines #logos li:hover {
+    background-color: #fbfbfd;
+}
+
+#magazines .logo {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/magazines-new_black.png');
+    height: 75px;
+}
+
+#magazines .logo:hover {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/magazines-new.png');
+}
+
+#magazines .head .logo {
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/magazines-new.png');
+}
+
+#magazines .logo.techcrunch {
+    width: 172px;
+}
+
+#magazines .logo.the-ind {
+    width: 171px;
+    background-position: 788px;
+}
+
+#magazines .logo.techradar {
+    width: 159px;
+    background-position: 615px;
+}
+
+#magazines .logo.money-observer {
+    width: 136px;
+    background-position: 450px;
+}
+
+#magazines .logo.reuters {
+    width: 177px;
+    background-position: 306px;
+}
+
+#magazines .logo.cityam {
+    width: 120px;
+    background-position: 130px;
+}
+
+#magazines #logos li:hover .tip {
+    display: block;
+}
+
+.tip {
+    display: none;
+    position: absolute;
+    bottom: 75px;
+    width: 295px;
+    height: 215px;
+    margin: 0px 0px 0px -20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border: solid 1px #cfcfcf;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.tip div.head {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e1e4;
+}
+
+.tip div.body {
+    padding: 10px 25px 0 20px;
+}
+
+.tip div.body p {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: #626262;
+    padding-bottom: 10px;
+}
+
+.tip div.body a {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    width: 250px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 13px;
+    font-family: arial;
+}
+
+.tip div.arrow {
+    position: absolute;
+    bottom: -10px;
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/tip-arrow.png');
+    height: 10px;
+    width: 297px;
+}
+
+/* html.chrome.win .tip div.arrow { top: 20px;} /* Chrome on Windows Fix */
+/* html.gecko .tip div.arrow { top: 19px; } /* Firefox Fix */
+/* html.ie8 .tip div.arrow { top: 23px; } /* IE8 Fix */
+/* html.ie9 .tip div.arrow { top: 24px; } /* IE9 Fix */
+
+/* = Footer Navigation
+  =================================================================*/
+#footer-nav {
+    padding: 30px 0px 130px 0px;
+}
+
+#footer-nav .menu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer-nav .menu.menu-1,
+#footer-nav .menu.menu-2,
+#footer-nav .menu.menu-3 {
+    padding-right: 147px;
+}
+
+#footer-nav .menu ul {
+    line-height: 23px;
+}
+
+#footer-nav h3.menu-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+#footer-nav .menu li a, #footer-nav .menu li div {
+    font-size: 14px;
+    color: #626262;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#footer-nav .menu li a:hover, #footer-nav .menu li div:hover {
+    text-decoration: underline;
+}
+
+#footer-nav .menu.social li {
+    height: 23px;
+    padding-left: 35px;
+    margin-bottom: 6px;
+    background-image: url('https://site.etoro.com/en/wp-content/themes/etoro/images/social-icons.jpg');
+    background-repeat: no-repeat;
+}
+
+#footer-nav .menu.social li.twitter {
+    background-position: 0px -23px;
+}
+
+#footer-nav .menu.social li.linkedin {
+    background-position: 0px -46px;
+}
+
+#footer-nav .menu.social li.google {
+    background-position: 0px -69px;
+}
+
+#footer-nav .menu.social li.youtube {
+    background-position: 0px -92px;
+}
+
+/* = Trusted
+  =================================================================*/
+#trusted {
+    padding: 20px 0;
+}
+
+.footer_mobile {
+    display: none;
+}
+
+.mobile_link {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    html, body {
+        height: 100%;
+
+    }
+
+    body {
+        height: 100%;
+    }
+
+    * {
+        /*-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    html body {
+        padding-top: 50px;
+    }
+
+    #main-menu {
+        position: fixed;
+        top: 0;
+        border-bottom: 0;
+        background: #3D404A;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-thumb {
+        background-color: rgba(61, 64, 74, 1);
+
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-track {
+        background-color: rgba(209, 211, 224, 0.7);
+
+    }
+
+    .float-right,
+    .float-left {
+        float: none;
+    }
+
+    #main-menu nav {
+        width: auto;
+    }
+
+    #main-menu nav .leftMenu {
+        float: none;
+    }
+
+    .safari #main-menu li.more {
+        margin-right: 0;
+    }
+
+    #main-menu nav .leftMenu > ul > li:not(.more):not(.logo) {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo {
+        position: absolute;
+        width: 106px;
+        height: 47px;
+        top: 0;
+        left: 0px;
+        background-color: transparent;
+        background-image: url('../../images/logo-sm.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    #main-menu li.languages {
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        margin-right: 10px;
+    }
+
+    #main-menu li.sign-in {
+    }
+
+    #main-menu li.sign-in a {
+        padding: 0 10px !important;
+    }
+
+    #main-menu li.menu-item.button {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
+    #main-menu li.menu-item.button a {
+        padding: 0 10px;
+    }
+
+    #main-menu li.etoro.logo img {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-menu li.menu-item.button a {
+        border: 0;
+        background-color: transparent;
+        color: #fff;
+        height: 40px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+
+    #main-menu nav .searchBox {
+        display: none;
+    }
+
+    /*
+	#main-menu nav .mobile_link { position:absolute; right: 50%; width: 150px; height: 48px; margin-right: -75px;}
+	#main-menu nav .mobile_link a { display:block; width:100%; height:100%;  background-repeat:no-repeat; background-size:contain;}
+	*/
+    .mobile_link {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 100;
+    }
+
+    .mobile_link a {
+        background-position: center center;
+        background-color: #2C2F3A;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile_link.apple a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/app_store.png');
+    }
+
+    .mobile_link.android a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/google_play.png');
+    }
+
+    #main-menu .drop-down .menu {
+        position: fixed;
+        right: 0px;
+    }
+
+    #main-menu li.more .text {
+        display: none;
+    }
+
+    #main-menu nav .leftMenu li.menu-item > a {
+        padding: 0;
+    }
+
+    #main-menu li.more .icon.more {
+        display: none;
+        margin-left: 0;
+        width: 50px;
+        height: 48px;
+        margin-top: -1px;
+        background-color: #3D404A;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-nav.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50px;
+    }
+
+    #main-menu .menu-item.open {
+        background: inherit;
+    }
+
+    #main-menu li.more .sub-menu {
+        position: fixed;
+        top: 0;
+        left: -310px;
+        bottom: 0;
+        z-index: 10;
+        width: 300px;
+        min-height: 100%;
+        height: 100%;
+        background: #4C505D;
+        border-right: 1px solid #626877;
+        -webkit-box-shadow: 0px 0px 10px 0 #000;
+        -moz-box-shadow: 0px 0px 10px 0 #000;
+        box-shadow: 0px 0px 10px 0 #000;
+        -webkit-transition: left 200ms ease-in-out;
+        -moz-transition: left 200ms ease-in-out;
+        -ms-transition: left 200ms ease-in-out;
+        -o-transition: left 200ms ease-in-out;
+        transition: left 200ms ease-in-out;
+    }
+
+    #main-menu li.more > .sub-menu {
+        display: block !important;
+    }
+
+    #main-menu li.more.open > .sub-menu {
+        left: 0;
+    }
+
+    #main-menu li.more .sub-menu .columns_w {
+        overflow-y: scroll;
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        overflow-y: scroll;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea {
+        position: relative;
+        display: block;
+        height: 48px;
+        border-bottom: 1px solid #32363e;
+        background: #3D404A;
+        z-index: 99999999999999;
+        box-sizing: border-box;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 108px;
+        height: 48px;
+        background-size: cover;
+        60px;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-etoro-logo-hd.png');
+    }
+
+    #main-menu li.more .sub-menu .mobileArea .close {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-x.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #main-menu li.more .sub-menu .column {
+        height: auto !important;
+        width: auto;
+        padding: 15px 30px;
+        width: 100%;
+        box-sizing: border-box;
+        border-left: none;
+    }
+
+    #main-menu li.more .sub-menu .column .gap {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column.first {
+        padding: 25px 30px 15px 30px;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle.middle {
+        margin-top: 40px;
+    }
+
+    #main-menu li.more .sub-menu .column.last {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column:nth-child(4) {
+    }
+
+    #main-menu li.more .sub-menu .shadow-sub-menu {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a:hover {
+        color: #fff;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .more-bottom {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        background: #BDD894;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated {
+        background: #88BCE2;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a {
+        padding-left: 35px;
+        position: relative;
+        background-image: none;
+        margin-bottom: 17px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-menu_icons.png');
+        background-size: 30px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.openbook a:before {
+        background-position: 0px -48px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.web-trader a:before {
+        background-position: 0px 0px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.mobile a:before {
+        background-position: 0px 33px;
+        top: -6px;
+    }
+
+    #footer-nav {
+        display: none;
+    }
+
+    .trusted {
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    div.line {
+        display: none;
+    }
+
+    #footer .wrapper {
+        width: 96%;
+    }
+
+    #footer #content p.trading-name-info {
+        font-size: 12px;
+    }
+
+    #footer #legal-notice {
+        font-size: 12px;
+    }
+
+    #footer #legal-notice p {
+        padding: 20px 12px;
+    }
+
+    #footer {
+        padding: 30px 0 60px 0;
+    }
+
+    #footer #disclosure-links {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    body > div[style*="z-index: 1000"] {
+        display: none !important;
+    }
+
+    /* nanorep*/
+    #header *,
+    .wrapper {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .footer_mobile {
+        display: block;
+        font-size: 14px;
+        clear: both;
+    }
+
+    .footer_mobile .columns_w {
+    }
+
+    .footer_mobile .columns_w .column {
+    }
+
+    .footer_mobile .columns_w .column.last {
+        display: none;
+    }
+
+    .footer_mobile .columns_w .column .categoryTitle {
+        padding: 10px 15px;
+        margin-top: 15px;
+        background: #515561;
+        color: #fff;
+    }
+
+    .footer_mobile .columns_w .column li {
+        text-align: left;
+    }
+
+    .footer_mobile .columns_w .column li a {
+        display: block;
+        margin: 10px 20px;
+        color: #646464;
+    }
+
+    .footer_mobile .columns_w .column li a:empty {
+        margin: 0;
+    }
+
+    .footer_mobile .columns_w .column li a span {
+        display: none;
+    }
+
+    .wrapper-inner-page {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .wrapper-inner-page * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .newFooter #footer-nav {
+        display: none;
+    }
+
+    .newFooter .trusted {
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    .newFooter div.line {
+        display: none;
+    }
+
+    .newFooter #footer .wrapper {
+        width: 100%;
+    }
+
+    .newFooter #footer .wrapper#content {
+        width: 94%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        padding-left: 0;
+    }
+
+    .newFooter #footer .wrapper.top {
+        margin: 0;
+    }
+
+    .newFooter #disclosure-links a.general-risk-disclosure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wrapper-inner-page h1 {
+        line-height: 130%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice p {
+        padding: 20px 0px;
+    }
+
+    .newFooter #footer {
+        padding: 30px 0 0 0;
+    }
+
+    .newFooter * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body > div[style*="z-index: 1000"] {
+        display: none !important;
+    }
+
+    /* nanorep*/
+    /* ar-ae */
+    #main-menu li.menu-item.languages ul li.ar-ae {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .ar-ae {
+        direction: rtl;
+        text-align: right;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul {
+        text-align: right;
+    }
+
+    .ar-ae #rankings .rankings-table-wrapper {
+        direction: ltr;
+    }
+
+    .ar-ae #footer .wrapper {
+        text-align: right;
+    }
+
+    .ar-ae #main-menu .drop-down .menu {
+        direction: ltr;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated,
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        margin-right: 5px;
+    }
+
+    .ar-ae.newFooter #footer .wrapper {
+        text-align: right;
+        direction: rtl;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    html, body {
+        height: 100%;
+
+    }
+
+    body {
+        height: 100%;
+    }
+
+    * {
+        /*-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    html body {
+        padding-top: 50px;
+    }
+
+    #main-menu {
+        position: fixed;
+        top: 0;
+        border-bottom: 0;
+        background: #3D404A;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-thumb {
+        background-color: rgba(61, 64, 74, 1);
+
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-track {
+        background-color: rgba(209, 211, 224, 0.7);
+
+    }
+
+    .float-right,
+    .float-left {
+        float: none;
+    }
+
+    #main-menu nav {
+        width: auto;
+    }
+
+    #main-menu nav .leftMenu {
+        float: none;
+    }
+
+    .safari #main-menu li.more {
+        margin-right: 0;
+    }
+
+    #main-menu nav .leftMenu > ul > li:not(.more):not(.logo) {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo {
+        position: absolute;
+        width: 106px;
+        height: 47px;
+        top: 0;
+        left: 0px;
+        background-color: transparent;
+        background-image: url('../../images/logo-sm.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    #main-menu li.languages {
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        margin-right: 10px;
+    }
+
+    #main-menu li.sign-in {
+    }
+
+    #main-menu li.sign-in a {
+        padding: 0 10px !important;
+    }
+
+    #main-menu li.menu-item.button {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
+    #main-menu li.menu-item.button a {
+        padding: 0 10px;
+    }
+
+    #main-menu li.etoro.logo img {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-menu li.menu-item.button a {
+        border: 0;
+        background-color: transparent;
+        color: #fff;
+        height: 40px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+
+    #main-menu nav .searchBox {
+        display: none;
+    }
+
+    /*
+	#main-menu nav .mobile_link { position:absolute; right: 50%; width: 150px; height: 48px; margin-right: -75px;}
+	#main-menu nav .mobile_link a { display:block; width:100%; height:100%;  background-repeat:no-repeat; background-size:contain;}
+	*/
+    .mobile_link {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 100;
+    }
+
+    .mobile_link a {
+        background-position: center center;
+        background-color: #2C2F3A;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile_link.apple a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/app_store.png');
+    }
+
+    .mobile_link.android a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/google_play.png');
+    }
+
+    #main-menu .drop-down .menu {
+        position: fixed;
+        right: 0px;
+    }
+
+    #main-menu li.more .text {
+        display: none;
+    }
+
+    #main-menu nav .leftMenu li.menu-item > a {
+        padding: 0;
+    }
+
+    #main-menu li.more .icon.more {
+        display: none;
+        margin-left: 0;
+        width: 50px;
+        height: 48px;
+        margin-top: -1px;
+        background-color: #3D404A;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-nav.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50px;
+    }
+
+    #main-menu .menu-item.open {
+        background: inherit;
+    }
+
+    #main-menu li.more .sub-menu {
+        position: fixed;
+        top: 0;
+        left: -310px;
+        bottom: 0;
+        z-index: 10;
+        width: 300px;
+        min-height: 100%;
+        height: 100%;
+        background: #4C505D;
+        border-right: 1px solid #626877;
+        -webkit-box-shadow: 0px 0px 10px 0 #000;
+        -moz-box-shadow: 0px 0px 10px 0 #000;
+        box-shadow: 0px 0px 10px 0 #000;
+        -webkit-transition: left 200ms ease-in-out;
+        -moz-transition: left 200ms ease-in-out;
+        -ms-transition: left 200ms ease-in-out;
+        -o-transition: left 200ms ease-in-out;
+        transition: left 200ms ease-in-out;
+    }
+
+    #main-menu li.more > .sub-menu {
+        display: block !important;
+    }
+
+    #main-menu li.more.open > .sub-menu {
+        left: 0;
+    }
+
+    #main-menu li.more .sub-menu .columns_w {
+        overflow-y: scroll;
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        overflow-y: scroll;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea {
+        position: relative;
+        display: block;
+        height: 48px;
+        border-bottom: 1px solid #32363e;
+        background: #3D404A;
+        z-index: 99999999999999;
+        box-sizing: border-box;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 108px;
+        height: 48px;
+        background-size: cover;
+        60px;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-etoro-logo-hd.png');
+    }
+
+    #main-menu li.more .sub-menu .mobileArea .close {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-x.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #main-menu li.more .sub-menu .column {
+        height: auto !important;
+        width: auto;
+        padding: 15px 30px;
+        width: 100%;
+        box-sizing: border-box;
+        border-left: none;
+    }
+
+    #main-menu li.more .sub-menu .column .gap {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column.first {
+        padding: 25px 30px 15px 30px;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle.middle {
+        margin-top: 40px;
+    }
+
+    #main-menu li.more .sub-menu .column.last {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column:nth-child(4) {
+    }
+
+    #main-menu li.more .sub-menu .shadow-sub-menu {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a:hover {
+        color: #fff;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .more-bottom {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        background: #BDD894;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated {
+        background: #88BCE2;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a {
+        padding-left: 35px;
+        position: relative;
+        background-image: none;
+        margin-bottom: 17px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-menu_icons.png');
+        background-size: 30px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.openbook a:before {
+        background-position: 0px -48px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.web-trader a:before {
+        background-position: 0px 0px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.mobile a:before {
+        background-position: 0px 33px;
+        top: -6px;
+    }
+
+    #footer-nav {
+        display: none;
+    }
+
+    .trusted {
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    div.line {
+        display: none;
+    }
+
+    #footer .wrapper {
+        width: 96%;
+    }
+
+    #footer #content p.trading-name-info {
+        font-size: 12px;
+    }
+
+    #footer #legal-notice {
+        font-size: 12px;
+    }
+
+    #footer #legal-notice p {
+        padding: 20px 12px;
+    }
+
+    #footer {
+        padding: 30px 0 60px 0;
+    }
+
+    #footer #disclosure-links {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    body > div[style*="z-index: 1000"] {
+        display: none !important;
+    }
+
+    /* nanorep*/
+    #header *,
+    .wrapper {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .footer_mobile {
+        display: block;
+        font-size: 14px;
+        clear: both;
+    }
+
+    .footer_mobile .columns_w {
+    }
+
+    .footer_mobile .columns_w .column {
+    }
+
+    .footer_mobile .columns_w .column.last {
+        display: none;
+    }
+
+    .footer_mobile .columns_w .column .categoryTitle {
+        padding: 10px 15px;
+        margin-top: 15px;
+        background: #515561;
+        color: #fff;
+    }
+
+    .footer_mobile .columns_w .column li {
+        text-align: left;
+    }
+
+    .footer_mobile .columns_w .column li a {
+        display: block;
+        margin: 10px 20px;
+        color: #646464;
+    }
+
+    .footer_mobile .columns_w .column li a:empty {
+        margin: 0;
+    }
+
+    .footer_mobile .columns_w .column li a span {
+        display: none;
+    }
+
+    .wrapper-inner-page {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .wrapper-inner-page * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .newFooter #footer-nav {
+        display: none;
+    }
+
+    .newFooter .trusted {
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    .newFooter div.line {
+        display: none;
+    }
+
+    .newFooter #footer .wrapper {
+        width: 100%;
+    }
+
+    .newFooter #footer .wrapper#content {
+        width: 94%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        padding-left: 0;
+    }
+
+    .newFooter #footer .wrapper.top {
+        margin: 0;
+    }
+
+    .newFooter #disclosure-links a.general-risk-disclosure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wrapper-inner-page h1 {
+        line-height: 130%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice p {
+        padding: 20px 0px;
+    }
+
+    .newFooter #footer {
+        padding: 30px 0 0 0;
+    }
+
+    .newFooter * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body > div[style*="z-index: 1000"] {
+        display: none !important;
+    }
+
+    /* nanorep*/
+    /* ar-ae */
+    #main-menu li.menu-item.languages ul li.ar-ae {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .ar-ae {
+        direction: rtl;
+        text-align: right;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul {
+        text-align: right;
+    }
+
+    .ar-ae #rankings .rankings-table-wrapper {
+        direction: ltr;
+    }
+
+    .ar-ae #footer .wrapper {
+        text-align: right;
+    }
+
+    .ar-ae #main-menu .drop-down .menu {
+        direction: ltr;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated,
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        margin-right: 5px;
+    }
+
+    .ar-ae.newFooter #footer .wrapper {
+        text-align: right;
+        direction: rtl;
+    }
+}
+
+@media (max-width: 1px) {
+
+    /* OLD */
+    html, body {
+        height: 100%;
+
+    }
+
+    body {
+        height: 100%;
+    }
+
+    * {
+        /*-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    html body {
+        padding-top: 50px;
+    }
+
+    #main-menu {
+        position: fixed;
+        top: 0;
+        border-bottom: solid 1px #000;
+        background: #3D404A;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.4);
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:vertical {
+        width: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar:horizontal {
+        height: 4px;
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-thumb {
+        background-color: rgba(61, 64, 74, 1);
+
+    }
+
+    #main-menu li.more .columns_w::-webkit-scrollbar-track {
+        background-color: rgba(209, 211, 224, 0.7);
+
+    }
+
+    .float-right,
+    .float-left {
+        float: none;
+    }
+
+    #main-menu nav {
+        width: auto;
+    }
+
+    #main-menu nav .leftMenu {
+        float: none;
+    }
+
+    .safari #main-menu li.more {
+        margin-right: 0;
+    }
+
+    #main-menu nav .leftMenu > ul > li:not(.more):not(.logo) {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0px;
+        background-color: transparent;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 34px;
+    }
+
+    #main-menu li.languages {
+        position: absolute;
+        top: 1px;
+        right: 50px;
+    }
+
+    #main-menu li.sign-in,
+    #main-menu li.menu-item.button {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo img {
+        display: none;
+    }
+
+    #main-menu li.etoro.logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-menu li.menu-item.button a {
+        border: 0;
+        background-color: transparent;
+        color: #fff;
+        height: 40px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+
+    #main-menu nav .searchBox {
+        display: none;
+    }
+
+    #main-menu nav .mobile_link {
+        position: absolute;
+        right: 50%;
+        width: 150px;
+        height: 48px;
+        margin-right: -75px;
+    }
+
+    #main-menu nav .mobile_link a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #main-menu nav .mobile_link.apple a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/app_store.png');
+    }
+
+    #main-menu nav .mobile_link.android a {
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/google_play.png');
+    }
+
+    #main-menu .drop-down .menu {
+        position: fixed;
+        right: 0px;
+    }
+
+    #main-menu li.more .text {
+        display: none;
+    }
+
+    #main-menu nav .leftMenu li.menu-item > a {
+        padding: 0;
+    }
+
+    #main-menu li.more .icon.more {
+        margin-left: 0;
+        width: 50px;
+        height: 48px;
+        margin-top: -1px;
+        background-color: #3D404A;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-nav.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50px;
+    }
+
+    #main-menu .menu-item.open {
+        background: inherit;
+    }
+
+    #main-menu li.more .sub-menu {
+        position: fixed;
+        top: 0;
+        left: -310px;
+        bottom: 0;
+        z-index: 10;
+        width: 300px;
+        min-height: 100%;
+        height: 100%;
+        background: #4C505D;
+        border-right: 1px solid #626877;
+        -webkit-box-shadow: 0px 0px 10px 0 #000;
+        -moz-box-shadow: 0px 0px 10px 0 #000;
+        box-shadow: 0px 0px 10px 0 #000;
+        -webkit-transition: left 200ms ease-in-out;
+        -moz-transition: left 200ms ease-in-out;
+        -ms-transition: left 200ms ease-in-out;
+        -o-transition: left 200ms ease-in-out;
+        transition: left 200ms ease-in-out;
+    }
+
+    #main-menu li.more > .sub-menu {
+        display: block !important;
+    }
+
+    #main-menu li.more.open > .sub-menu {
+        left: 0;
+    }
+
+    #main-menu li.more .sub-menu .columns_w {
+        overflow-y: scroll;
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        overflow: scroll;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea {
+        position: relative;
+        display: block;
+        height: 48px;
+        border-bottom: 1px solid #32363e;
+        background: #3D404A;
+        z-index: 99999999999999;
+        box-sizing: border-box;
+    }
+
+    #main-menu li.more .sub-menu .mobileArea:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 108px;
+        height: 48px;
+        background-size: cover;
+        60px;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-etoro-logo-hd.png');
+    }
+
+    #main-menu li.more .sub-menu .mobileArea .close {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-x.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #main-menu li.more .sub-menu .column {
+        height: auto !important;
+        width: auto;
+        padding: 15px 30px;
+        width: 100%;
+        box-sizing: border-box;
+        border-left: none;
+    }
+
+    #main-menu li.more .sub-menu .column .gap {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column.first {
+        padding: 25px 30px 15px 30px;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle.middle {
+        margin-top: 40px;
+    }
+
+    #main-menu li.more .sub-menu .column.last {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column:nth-child(4) {
+    }
+
+    #main-menu li.more .sub-menu .shadow-sub-menu {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a:hover {
+        color: #fff;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.categoryTitle {
+        color: #D1D3E0;
+    }
+
+    #main-menu li.more .sub-menu .more-bottom {
+        display: none;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        background: #BDD894;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated {
+        background: #88BCE2;
+        color: #4C505D;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a {
+        padding-left: 35px;
+        position: relative;
+        background-image: none;
+        margin-bottom: 17px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.icon a:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        background-image: url('//site.etoro.com/en/wp-content/themes/etoro/images/general/m-menu_icons.png');
+        background-size: 30px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.openbook a:before {
+        background-position: 0px -48px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.web-trader a:before {
+        background-position: 0px 0px;
+    }
+
+    #main-menu li.more .sub-menu .column ul li.mobile a:before {
+        background-position: 0px 33px;
+        top: -6px;
+    }
+
+    #main-menu li.more .sub-menu .subColumnsContainer {
+        background-color: transparent;
+        width: auto;
+        height: auto;
+    }
+
+    .wrapper-inner-page {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .wrapper-inner-page * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .newFooter #footer-nav {
+        display: none;
+    }
+
+    .newFooter .trusted {
+        width: 96%;
+        background-size: contain;
+        padding: 0;
+    }
+
+    .newFooter div.line {
+        display: none;
+    }
+
+    .newFooter #footer .wrapper {
+        width: 100%;
+    }
+
+    .newFooter #footer .wrapper#content {
+        width: 94%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        padding-left: 0;
+    }
+
+    .newFooter #footer .wrapper.top {
+        margin: 0;
+    }
+
+    .newFooter #disclosure-links a.general-risk-disclosure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wrapper-inner-page h1 {
+        line-height: 130%;
+    }
+
+    .newFooter #footer #content p.trading-name-info {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice {
+        font-size: 12px;
+    }
+
+    .newFooter #footer #legal-notice p {
+        padding: 20px 0px;
+    }
+
+    .newFooter #footer {
+        padding: 30px 0 0 0;
+    }
+
+    .newFooter * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body > div[style*="z-index: 1000"] {
+        display: none !important;
+    }
+
+    /* nanorep*/
+    /* ar-ae */
+    #main-menu li.menu-item.languages ul li.ar-ae {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .ar-ae {
+        direction: rtl;
+        text-align: right;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul {
+        text-align: right;
+    }
+
+    .ar-ae #rankings .rankings-table-wrapper {
+        direction: ltr;
+    }
+
+    .ar-ae #footer .wrapper {
+        text-align: right;
+    }
+
+    .ar-ae #main-menu .drop-down .menu {
+        direction: ltr;
+    }
+
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_updated,
+    .ar-ae #main-menu li.more .sub-menu .column ul li a span.sub_menu_new {
+        margin-right: 5px;
+    }
+
+    .ar-ae.newFooter #footer .wrapper {
+        text-align: right;
+        direction: rtl;
+    }
+}
+ 
