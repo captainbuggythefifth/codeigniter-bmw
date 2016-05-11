@@ -1,0 +1,67 @@
+/*==================== GLOBAL STYLES ====================*/
+body{margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; font-style:normal; font-weight:normal; text-decoration:none;background-color:#f0f0f0; text-align:left; }
+h1,h2,h3,h4,h5,h6,img,img a,a, iframe, IFRAME, input,form,fieldset,hr,ul,ol,table,p{margin:0; padding:0; border:none; text-decoration:none;} span{padding:0; margin:0;} img a{border:none;}
+a { color:#408fd3;}
+.clearFix { width:100%; clear:both;}
+.wrapper-inner-page {   margin:0 auto; content:"";}
+.clear { display:block; clear:both;  height:14px;  content:"";}
+br { display:none;}
+
+/* HEADER */
+
+.about-us-page { padding-top:50px; /* padding-bottom:650px; */}
+.about-us-page .header-inner {  padding-bottom:40px;}
+.about-us-page .header-inner .title { font-size:29px; font-weight:bold; color:#000; * position:relative; line-height: 120%;}
+
+/* MAIN CONTENT */
+.about-us-page .mainContentInner {   }
+.about-us-page .mainContentInner .left { float:left; width:436px;}
+.about-us-page .mainContentInner .left .top { padding-bottom:11px;}
+.about-us-page .mainContentInner .left .top .videoConteinerBorder {width:402px; border:1px solid #c5c5c5;}
+.about-us-page .mainContentInner .left .top .videoConteiner {width:388px; height:207px;  background:#000; border:7px solid #ffffff; cursor:pointer;}
+.about-us-page .mainContentInner .left .top .videoConteiner .theImage {width:388px; height:207px; background:#000 url(../../images/about-us2/video-bg.png) no-repeat;}
+.about-us-page .mainContentInner .left .top .videoConteiner .theImage .playVideo { float:left; margin-top:46px; margin-left:137px; width:114px; height:115px; background:url(../../images/about-us2/play-video.png) no-repeat;}
+
+.about-us-page .mainContentInner .left .bottom { }
+.about-us-page .mainContentInner .left .bottom .menu{margin-left:2px; width:401px;}
+.about-us-page .mainContentInner .left .bottom .menu ul{list-style-type:none;}
+.about-us-page .mainContentInner .left .bottom .menu ul li{list-style-type:none; height:51px; margin-bottom: 3px;}
+.about-us-page .mainContentInner .left .bottom .menu ul li a{display:block; width:401px; height:51px; font-size:16px; color:#82bada; background:transparent url(../../images/about-us2/arrow.png) no-repeat 380px center; background-color:#f6f6f6;}
+.about-us-page .mainContentInner .left .bottom .menu ul li a:hover{display:block; width:401px; height:51px; color:#1383c3; background:transparent url(../../images/about-us2/arrow-hover.png) no-repeat 380px center; background-color:#ffffff; }
+.about-us-page .mainContentInner .left .bottom .menu ul li a.about-us{display:block; width:401px; height:51px; color:#1383c3; background:transparent url(../../images/about-us2/arrow-hover.png) no-repeat 380px center; background-color:#ffffff; }
+.about-us-page .mainContentInner .left .bottom .menu ul li a #text{padding-left:23px; padding-top:17px;}
+
+.about-us-page .mainContentInner .left .bottom .menu ul li:nth-child(9) a { font-weight:bold; color:#009EE4;}
+
+.about-us-page .mainContentInner .right { float:right; width:510px;}
+.about-us-page .mainContentInner .right .firstParagraph { margin-top:25px; margin-bottom:35px; margin-right:25px; color:#777777; font-size:14px;}
+
+.space {padding-top:20px;}
+
+.about-us-page .mainContentInner .right .line{background:transparent url(../../images/about-us2/line.png) repeat-x; width:509px; height:2px;}
+
+.about-us-page .mainContentInner .right .secondParagraph { margin-top:35px; margin-bottom:35px; margin-right:24px; color:#777; font-size:14px;}
+
+
+.about-us-page .mainContentInner .right .rightTitle { padding-left:7px; font-size:18px; font-weight:bold; color:#3c3c3c;}
+.about-us-page .mainContentInner .right .timeLineList {padding-left:7px; width:424px; padding-top:25px;}
+.about-us-page .mainContentInner .right .timeLineList .item {width:424px; overflow:hidden; padding:17px 0px;}
+.about-us-page .mainContentInner .right .timeLineList .item .date { float:left; width:78px; text-align:left; font-size:14px; font-weight:bold; color:#1383c3;}
+.about-us-page .mainContentInner .right .timeLineList .item .text { float:right; width:345px; font-size:14px; font-weight:normal; color:#3c3c3c; line-height:130%;}
+.about-us-page .mainContentInner .right .timeLineList .sep { width:424px; height:2px; background:url(../../images/about-us/sep.png) repeat-x;}
+
+@media (max-width:600px) 
+{
+	.wrapper-inner-page * {box-sizing:border-box;}
+	.about-us-page { width:100%; overflow:hidden; padding:2%;}
+	.about-us-page .header-inner {padding: 10px 0 30px 0;}	
+	.about-us-page .mainContentInner .left .top .videoConteiner .theImage { position:relative; width:100%; height:100%;}
+	.about-us-page .mainContentInner .left .top .videoConteiner .theImage .playVideo { position:absolute; top:50%; left:50%; margin-top:-57px; margin-left:-56px;}
+	.about-us-page .mainContentInner .left{ width:100%;}
+	.about-us-page .mainContentInner .left .top .videoConteinerBorder{ width:100%;}
+	.about-us-page .mainContentInner .left .top .videoConteiner{ width:100%;}
+	.about-us-page .mainContentInner .left .bottom .menu{ width:100%;}
+	.about-us-page .mainContentInner .left .bottom .menu ul li a.about-us{ width:100%;}
+	.about-us-page .mainContentInner .left .bottom .menu ul li a  { width:100% !important;}
+	.about-us-page .mainContentInner .right { width:100%;}
+}

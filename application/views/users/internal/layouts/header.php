@@ -15,30 +15,41 @@
         Contact Us | Binary Wealth Management</title>
 
 
-    <link rel="stylesheet" id="reset-css" href="client/vendor/others/reset.css" type="text/css" media="all">
-    <link rel="stylesheet" id="main-css" href="client/vendor/others/main.css" type="text/css" media="all">
-    <link rel="stylesheet" id="header-css" href="client/vendor/others/header.css" type="text/css" media="all">
-    <link rel="stylesheet" id="general-css" href="client/vendor/others/general.css" type="text/css" media="all">
-    <script src="client/vendor/others/fbevents.js" async></script>
-    <script type="text/javascript" src="client/vendor/others/a_002.htm" charset="utf-8" async></script>
-    <script src="client/vendor/others/watch.js" async type="text/javascript"></script>
-    <script src="client/vendor/others/fbds.js" async></script>
-    <script src="client/vendor/others/analytics.js" async type="text/javascript"></script>
-    <script src="client/vendor/others/gtm.js" async></script>
-    <script src="client/vendor/others/mixpanel-2.js" async type="text/javascript"></script>
-    <script type="text/javascript" src="client/vendor/others/1.js"></script>
-    <script type="text/javascript" src="client/vendor/others/jquery-ui.js"></script>
-    <script type="text/javascript" src="client/vendor/others/header.js"></script>
-    <script type="text/javascript" src="client/vendor/others/jquery.js"></script>
-    <script type="text/javascript" src="client/vendor/others/jquery_002.js"></script>
-    <script type="text/javascript" src="client/vendor/others/general.js"></script>
+    <link rel="stylesheet" id="reset-css" href="client/vendor/internal/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" id="main-css" href="client/vendor/internal/main.css" type="text/css" media="all">
+    <link rel="stylesheet" id="header-css" href="client/vendor/internal/header.css" type="text/css" media="all">
+    <link rel="stylesheet" id="general-css" href="client/vendor/internal/general.css" type="text/css" media="all">
+    <script src="client/vendor/internal/fbevents.js" async></script>
+    <script type="text/javascript" src="client/vendor/internal/a_002.htm" charset="utf-8" async></script>
+    <script src="client/vendor/internal/watch.js" async type="text/javascript"></script>
+    <script src="client/vendor/internal/fbds.js" async></script>
+    <script src="client/vendor/internal/analytics.js" async type="text/javascript"></script>
+    <script src="client/vendor/internal/gtm.js" async></script>
+    <script src="client/vendor/internal/mixpanel-2.js" async type="text/javascript"></script>
+    <script type="text/javascript" src="client/vendor/internal/1.js"></script>
+    <script type="text/javascript" src="client/vendor/internal/jquery-ui.js"></script>
+    <script type="text/javascript" src="client/vendor/internal/header.js"></script>
+    <script type="text/javascript" src="client/vendor/internal/jquery.js"></script>
+    <script type="text/javascript" src="client/vendor/internal/jquery_002.js"></script>
+    <script type="text/javascript" src="client/vendor/internal/general.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="client/vendor/others/contact-us-n.css">
-    <link type="text/css" rel="stylesheet" href="client/vendor/others/contact.css">
-    <script type="text/javascript" src="client/vendor/others/contact-us.js"></script>    <!-- start Mixpanel -->
+    <link type="text/css" rel="stylesheet" href="client/vendor/internal/contact-us-n.css">
+
+
+    <link type="text/css" rel="stylesheet" href="client/vendor/internal/contact.css">
+    <script type="text/javascript" src="client/vendor/internal/contact-us.js"></script>    <!-- start Mixpanel -->
     <link rel="shortcut icon" href="http://www.binarywealthmanagement.com/images/favi-36-36.ico">
 
+
+    <?php
+        if(is_array($aCss)){
+            foreach ($aCss as $css){
+                echo "<link type='text/css' rel='stylesheet' href='" . $css . "'>";
+            }
+        }
+    ?>
+    
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -60,7 +71,7 @@
     <nav>
         <div class="leftMenu">
             <ul>
-                <li class="menu-item etoro logo"><a href="http://binarywealthmanagement.com" class=""><img src="client/vendor/others/logo-inner.png"></a></li>
+                <li class="menu-item etoro logo"><a href="http://binarywealthmanagement.com" class=""><img src="client/vendor/internal/logo-inner.png"></a></li>
 
             </ul>
         </div>

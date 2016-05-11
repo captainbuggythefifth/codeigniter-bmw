@@ -1,0 +1,75 @@
+/*==================== GLOBAL STYLES ====================*/
+body{margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; font-style:normal; font-weight:normal; text-decoration:none;background-color:#f0f0f0; text-align:left; }
+h1,h2,h3,h4,h5,h6,img,img a,a, iframe, IFRAME, input,form,fieldset,hr,ul,ol,table,p{margin:0; padding:0; border:none; text-decoration:none;} span{padding:0; margin:0;} img a{border:none;}
+a { color:#408fd3;}
+.clearFix { width:100%; clear:both;}
+.wrapper-inner-page { width:950px; margin:0 auto; content:"";}
+.clear { display:block; clear:both;  height:14px;  content:"";}
+br { display:none;}
+
+/* HEADER */
+
+.our-team-page { padding-top:50px; padding-bottom:200px;}
+.our-team-page { width:950px;  padding-bottom:40px;}
+.our-team-page .title { font-size:34px; font-weight:normal; color:#000; * position:relative;}
+.our-team-page .links {float: right; text-align: right; color: #1383c3; }
+.our-team-page .links a { padding: 15px; font-size: 14px; font-weight: normal; color: #1383c3; }
+.our-team-page .links a:hover { text-decoration:underline; }
+.our-team-page .headerSep { width:950px;  height:1px; margin:28px 0px 40px 0px; background:#fff; border-top:solid 1px #dbdbdb; }
+/* MAIN CONTENT */
+.our-team-page .mainContentInner { width:950px; }
+.our-team-page .mainContentInner .topArea { padding-bottom:35px;}
+.our-team-page .mainContentInner .topArea .left { float:left; width:228px; height:275px; padding:5px; border:solid 1px #c8c9cb;}
+.our-team-page .mainContentInner .topArea .right { float:right; width:665px;}
+.our-team-page .mainContentInner .topArea .right .title {font-size:20px;font-weight:bold;color:#1383c3;}
+.our-team-page .mainContentInner .topArea .right .subTitle {font-size:16px;font-weight:normal;color:#777777;padding-top:5px }
+.our-team-page .mainContentInner .topArea .right .sectionText { margin-top:15px;  font-size:14px; font-weight:normal; color:#777; line-height:133%;}
+.our-team-page .mainContentInner .topArea .right .sectionText p { padding-bottom:15px;}
+.our-team-page .mainContentInner .topArea .right .social-networks {width:665px; height:32px; padding-top:40px}
+.our-team-page .mainContentInner .topArea .right .social-networks a { display:block; width:32px; height:32px; float:left; margin-right:6px; background-image:url(../../images/our-team/social-networks.png); background-repeat:no-repeat;}
+.our-team-page .mainContentInner .topArea .right .social-networks a.linkedin { background-position:0px 0px;}
+.our-team-page .mainContentInner .topArea .right .social-networks a.linkedin:hover {background-position:0px -32px;}
+.our-team-page .mainContentInner .topArea .right .social-networks a.twitter {background-position:-38px 0px;}
+.our-team-page .mainContentInner .topArea .right .social-networks a.twitter:hover {background-position:-38px -32px;}
+
+.our-team-page .mainContentInner .topArea .topLeft { float:left; width:424px;}
+.our-team-page .mainContentInner .topArea .topLeft .videoConteiner {   width:416px; height:231px;  background:#000; border:solid 4px #fff; cursor:pointer;}
+.our-team-page .mainContentInner .topArea .topLeft .videoConteiner .theImage {width:416px; height:231px; background:#000 url(../../images/about-us/video-bg.jpg) no-repeat;}
+.our-team-page .mainContentInner .topArea .topLeft .videoConteiner .theImage .playVideo { float:left; margin-top:61px; margin-left:153px; width:110px; height:108px; background:url(../../images/about-us/play-video.png) no-repeat;}
+
+/* main content */
+.our-team-page .mainContentInner .mainContent { width:950px;padding-left:13px;line-height:140%}
+.our-team-page .mainContentInner .mainContent .left { float:left; width:435px;}
+.our-team-page .mainContentInner .mainContent .left .social-networks {width:665px; height:32px; padding-top:25px}
+.our-team-page .mainContentInner .mainContent .left .social-networks a { display:block; width:32px; height:32px; float:left; margin-right:6px; background-image:url(../../images/our-team/social-networks.png); background-repeat:no-repeat;}
+.our-team-page .mainContentInner .mainContent .left .social-networks a.linkedin { background-position:0px 0px;}
+.our-team-page .mainContentInner .mainContent .left .social-networks a.linkedin:hover {background-position:0px -32px;}
+.our-team-page .mainContentInner .mainContent .left .social-networks a.twitter {background-position:-38px 0px;}
+.our-team-page .mainContentInner .mainContent .left .social-networks a.twitter:hover {background-position:-38px -32px;}
+
+.our-team-page .mainContentInner .mainContent .right { float:right; width:435px;}
+.our-team-page .mainContentInner .mainContent .right .social-networks {width:665px; height:32px; padding-top:25px}
+.our-team-page .mainContentInner .mainContent .right .social-networks a { display:block; width:32px; height:32px; float:left; margin-right:6px; background-image:url(../../images/our-team/social-networks.png); background-repeat:no-repeat;}
+.our-team-page .mainContentInner .mainContent .right .social-networks a.linkedin { background-position:0px 0px;}
+.our-team-page .mainContentInner .mainContent .right .social-networks a.linkedin:hover {background-position:0px -32px;}
+.our-team-page .mainContentInner .mainContent .right .social-networks a.twitter {background-position:-38px 0px;}
+.our-team-page .mainContentInner .mainContent .right .social-networks a.twitter:hover {background-position:-38px -32px;}
+
+.our-team-page .mainContentInner .mainContent .title { font-size:20px; font-weight:bold; color:#1383c3;}
+.our-team-page .mainContentInner .mainContent .subtitle { margin:4px 0px 20px 0px; font-size:16px; font-weight:normal; color:#777777;}
+.our-team-page .mainContentInner .mainContent .sectionText { font-size:14px; font-weight:normal; color:#3c3c3c;}
+.our-team-page .mainContentInner .mainContent .sep { width:435px; height:1px; margin:30px 0px; background:#fff; border-top:solid 1px #dbdbdb;}
+
+
+@media (max-width:600px) 
+{
+	.wrapper-inner-page * {box-sizing:border-box; max-width:100%;}
+	.wrapper-inner-page {box-sizing:border-box; width:100%; overflow:hidden; padding:2%;}
+	 .our-team-page { margin-top:10px; padding-top:0;}
+	 .our-team-page .mainContentInner .topArea .left { border:0; width:100%; height:auto; padding:0; margin-bottom:20px;}
+	 .our-team-page .mainContentInner .topArea .left img { display:block; width:100%; height:auto; padding:5px; border:solid 1px #c8c9cb;}
+	 .our-team-page .links {float:none; text-align:left; margin-top:30px; }
+	 .our-team-page .links a{ padding-left:0;}
+	 .our-team-page .links a:last-child { display:inline-block; padding-left:20px;}
+}
+}
